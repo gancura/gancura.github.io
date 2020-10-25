@@ -14,6 +14,9 @@ $msg .= "<br>email: ".$_POST["email"]."\n";
 $msg .= "<br>Телефон: ".$_POST["tel"]."\n";
 $msg .= "<br>Сообщение: ".$_POST["text"]."\n";
 //$msg .= "<br>Сообщение: ".$_POST["lname"]."\n";
+
+$subject = "Тема: ".$_POST["subject"]."\n";
+
 mail($to, $subject, $msg, $headerss);
 echo '<p>Сообщение успешно отправлено</p><br><a href="https://gancura.github.io/">Вернуться на главную</a> '; // Отправка успешна
 }

@@ -304,10 +304,10 @@
             <div class="col-md-4">
                 <h5>Contact Form</h5>
                 <hr>
-                <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+                <form class="contact-form php-mail-form" role="form" action="php/send.php" method="POST">
 
                     <div class="form-group">
-                        <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="name" name="name" class="form-control" id="contact-name" placeholder="Введите имя" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                     <div class="form-group">
@@ -315,12 +315,11 @@
                         <div class="validate"></div>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                        <input type="tel" name="subject" class="form-control" id="contact-tel" placeholder="Телефон" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
                         <div class="validate"></div>
                     </div>
-
                     <div class="form-group">
-                        <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="3" data-rule="required" data-msg="Please write something for us"></textarea>
+                        <textarea class="form-control" name="text" id="contact-message" placeholder="Введите сообщение" rows="3" data-rule="required" data-msg="Please write something for us"></textarea>
                         <div class="validate"></div>
                     </div>
 
@@ -329,7 +328,7 @@
                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
                     <div class="form-send">
-                        <button type="submit" class="btn btn-large">Send Message</button>
+                        <button type="submit" name="send" class="btn btn-large">Отправить</button>
                     </div>
 
                 </form>
